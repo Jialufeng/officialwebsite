@@ -6,6 +6,14 @@ $(document).ready(function() {
 
     $('#particles').height(Height);
 
+    $(window).bind("resize", function () {
+        var Height = $(window).height();
+
+        $('#particles').height(Height);
+        console.log(1);
+
+    });
+
 
     $(window).scroll(function() {
         console.log(($(window).scrollTop() + 200) > $('.rotate-img').offset().top)
@@ -27,3 +35,4 @@ $(document).ready(function() {
     })
 
 });
+
