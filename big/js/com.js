@@ -10,7 +10,6 @@ $(document).ready(function() {
         var Height = $(window).height();
 
         $('#particles').height(Height);
-        console.log(1);
 
     });
 
@@ -32,6 +31,15 @@ $(document).ready(function() {
         var index = $(this).index();
         console.log(index);
         $('.tabs-pm > div').eq(index).show().siblings().hide();
+    })
+
+
+
+    $('body').on('click','.abouts', function() {
+        var scrTop = $('.rotate-img').offset().top - 220;
+        $("body,html").animate({
+            scrollTop:scrTop
+        },500);
     })
 
 });
