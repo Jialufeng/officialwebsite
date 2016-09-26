@@ -10,7 +10,7 @@
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/com.css" rel="stylesheet"/>
     <script src="js/jquery.js"></script>
-    <script src="js/mediaelement-and-player.min.js"></script>
+    <!-- <script src="js/mediaelement-and-player.min.js"></script> -->
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=4mmwL08ZYwu6wano0BkrFLKcTnqU4tUm"></script>
     <script type="text/javascript" src="https://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
     <style>
@@ -114,10 +114,7 @@
                 <div class="about">
                     <span class="team_title">关于我们<i class="bors"></i></span>
 
-                    <p class="case">北京大数医达科技有限公司是一家在人工智能、
-                        大数据、云计算方面拥有国际领先水平的高科
-                        技企业，专注于多源异构医疗数据处理、深度
-                        挖掘与机器学习。</p>
+                    <p class="case">北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际领先水平的高科技企业，专注于多源异构医疗数据处理、深度挖掘与机器学习。</p>
                 </div>
                 <div class="rotate-img">
                     <div class="rotate1"></div>
@@ -156,9 +153,10 @@
                 </div>
                 <div class=" fr" style="margin-top: 133px">
                     <!--<embed src="br.mp4" ></embed>-->
-                    <video style="display:inline-block" width="642px" height="365px" poster="images/bg.jpg">
-                        <source src="br.mp4" type="video/mp4">
-                    </video>
+                    <!-- <video style="display:inline-block" width="642px" height="365px" poster="images/bg.jpg">
+                        <source src="http://v.youku.com/v_show/id_XMTcwMjk4OTYxNg==.html?from=s1.8-1-1.2&spm=0.0.0.0.NYjx4X">
+                    </video> -->
+                    <embed src='http://player.youku.com/player.php/sid/XMTcwMjk4OTYxNg==/v.swf' allowFullScreen='true' quality='high' width='642' height='365' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
                 </div>
             </div>
          </div>
@@ -204,13 +202,13 @@
     </script>
     <script>
         // <![CDATA[
-        $(document).ready(function() {
-            $('video').mediaelementplayer({
-                alwaysShowControls: false,
-                videoVolume: 'horizontal',
-                features: ['playpause','progress','volume','fullscreen']
-            });
-        });
+        // $(document).ready(function() {
+        //     $('video').mediaelementplayer({
+        //         alwaysShowControls: false,
+        //         videoVolume: 'horizontal',
+        //         features: ['playpause','progress','volume','fullscreen']
+        //     });
+        // });
         // ]]>
     </script>
 <script src="js/canvas.js"></script>
