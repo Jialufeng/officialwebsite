@@ -144,7 +144,7 @@
 
                     <p class="case">大数医达拥有自主知识产权的医疗大数据系统，该系统把超大规模的云计算系统，深度学习和数据挖掘等大数据算法，应用到医疗领域，自动化、智能化融汇多源异构的医疗数据，把自然语言的非结构化病历，自动转化为结构化的病历，从中挖掘出医生的临床诊断和治疗经验，助力医疗大数据产业发展，促进医疗卫生健康事业进步，服务社会，造福人类。</p>
                     <!--<a href="javascript:" class="play">观看短片</a>-->
-                    <a href="#" class="banner-pm btn btn-1 play">
+                    <a href="javascript:" class="banner-pm btn btn-1 play">
                         <svg>
                             <rect x="0" y="0" fill="none" width="100%" height="100%"></rect>
                         </svg>
@@ -154,9 +154,13 @@
                 <div class=" fr" style="margin-top: 133px">
                     <!--<embed src="br.mp4" ></embed>-->
                     <!-- <video style="display:inline-block" width="642px" height="365px" poster="images/bg.jpg">
-                        <source src="http://v.youku.com/v_show/id_XMTcwMjk4OTYxNg==.html?from=s1.8-1-1.2&spm=0.0.0.0.NYjx4X">
+                        <source src="hd.mp4">
                     </video> -->
-                    <embed src='http://player.youku.com/player.php/sid/XMTcwMjk4OTYxNg==/v.swf' allowFullScreen='true' quality='high' width='642' height='365' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+                    <video width="642px" height="365px" id="videos" controls="controls" poster="images/bg.jpg">
+                        <source src="hd.mp4" type="video/mp4" > </source>
+                        您的浏览器不支持video标签  
+                    </video>
+                    <!-- <embed src='http://player.youku.com/player.php/sid/XMTcwMjk4OTYxNg==/v.swf' allowFullScreen='true' quality='high' width='642' height='365' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed> -->
                 </div>
             </div>
          </div>
@@ -210,6 +214,22 @@
         //     });
         // });
         // ]]>
+
+        $(window).scroll(function() {
+            console.log(($(window).scrollTop() + 200) > $('.rotate-img').offset().top)
+            if(($(window).scrollTop() + 200) > $('.rotate-img').offset().top) {
+                $('.rotate-img').addClass('trans')
+            } else {
+                $('.rotate-img').removeClass('trans')
+
+            }
+        })
+
+        $('body').on('click','.play',function() {
+            var mv = $('#videos')[0];
+            mv.play();
+        });
+
     </script>
 <script src="js/canvas.js"></script>
     <script type="text/javascript">

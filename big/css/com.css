@@ -153,7 +153,7 @@
     width: 100%;
     background: #f6f6f6;
 }
-.intr_auto a {
+.tabs a {
     text-decoration: none;
     color: #2a292f;
     width: 224px;
@@ -164,6 +164,17 @@
     float: left;
     margin-right: 95px;
     font-size: 18px;
+}
+.imc {
+    border-radius: 3px;
+    border: 1px #272435 solid;
+    font-size: 14px;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #272435;
+    background: #fff;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 .intr_auto a i {
     display: inline-block;
@@ -176,7 +187,7 @@
 }
 .body-back {
     background: #f6f6f6;
-    display: none;
+    /*display: none;*/
 }
 .intr_data {
     overflow: hidden;
